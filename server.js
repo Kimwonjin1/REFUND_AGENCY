@@ -32,12 +32,12 @@ mongoose.connect(URI, {
     console.log('MONGODB 연결됨');
 })
 
+/* Prevent Sleep in Heroku Server */
+setInterval(function () {
+  http.get("https://refund-agent.herokuapp.com");
+}, 600000); // every 10 minutes 
 
- 
-// /* Prevent Sleep in Heroku Server */
-// setInterval(function () {
-//   http.get("https://refund-agent.herokuapp.com");
-// }, 600000); // every 10 minutes
+
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'))
