@@ -1,0 +1,16 @@
+.filter_menu input {
+    border-radius: 15px;
+    background-color: #1C1A1A;
+    color: white;
+}
+.filter_menu .row select{
+    border-radius: 15px;
+    background-color: #1C1A1A;
+    color: white;
+
+}
+.filter_menu .row select option{
+    background-color: #1C1A1A;
+    color: white;
+
+}

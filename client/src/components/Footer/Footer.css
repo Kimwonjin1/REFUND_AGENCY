@@ -1,0 +1,40 @@
+.footer-container{
+    background-color: #242424;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container img {
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+}
+
+.footer-container .title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer-container .description{
+    text-align: center;
+    margin-top: 20px;
+    line-height: 35px;
+    color: white;
+}
+
+.footer-container .icons {
+    position: relative;
+    font-size: 2.2rem;
+    margin: 30px;
+    color: #fff;
+}
+.footer-container .icons i {
+    margin: 10px;
+}
+

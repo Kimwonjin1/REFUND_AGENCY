@@ -1,0 +1,102 @@
+.calling-container{
+    font-family: 'Noto Sans KR';
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    scrollbar-width: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: black;
+}
+
+.calling-back{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.calling-back img{
+    width: 100%;
+    height: 100%;
+    overflow: cover;
+    background-size: auto;
+} 
+
+.consulting-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.1);
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    color: #000000;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+}
+
+.consulting-card .card-content{
+   margin-top: 20px;
+}
+
+.consulting-card .card-img img{
+    width: 500px;
+    height: 300px;
+}
+
+.consulting-card .text {
+    font-weight: bold;
+    color: white;
+}
+
+
+.consulting-card .kakao-button img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+@media screen and (max-width: 700px){
+    .calling-container{
+       font-size: 30px;
+    }
+    .card .card-img img{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .calling-container{
+       font-size: 20px;
+    }
+    .consulting-card {
+        height: 400px;
+    }
+    .card .card-img img{
+        width: 100%;
+        height: 200px;
+    }
+    .consulting-card .card-img img{
+        width: 300px;
+        height: 250px;
+    }
+    .consulting-card .card-content{
+        margin-top: 10px;
+     }
+    
+}

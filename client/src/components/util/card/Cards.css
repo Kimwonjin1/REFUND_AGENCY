@@ -1,0 +1,73 @@
+#btn_view{
+    text-decoration: none;
+}
+
+.product_card{
+    width: 300px;
+    height: 400px;
+    min-width: 300px;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    /* box-shadow: inset 5px 5px 5px rgba(0,0,0,05),
+    inset 5px 5px 5px rgba(255,255,255,0.5),
+     5px 5px 5px rgba(0,0,0,05),
+     5px 5px 5px rgba(255,255,255,0.5), */
+}
+
+.product_card .box{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    background: #ebf5fc;
+    transition: 0.8s;
+   
+}
+.product_card:hover .box{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(11deg, rgba(45,58,207,1) 0%, rgba(168,215,237,1) 40%, rgba(171,217,217,1) 100%);
+    border-radius: 10px;
+}
+.product_card:hover .box .product_box{
+  color: #fff;
+}
+
+
+.product_card img{
+    border-radius: 15px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product_card .product_box {
+    position: relative;
+    color: #777;
+    transition: 1s;
+}
+.product_card .product_box h2 {
+    position: relative;
+    margin-top: 15px;
+    width: 65%;
+    height: 30px;
+    overflow: hidden;
+}
+
+
+.product_card .product_box #btn_view{
+   position: absolute;
+   background: #03a9f4;
+   padding: 6px 10px;
+   border-radius: 20px;
+   color: #fff;
+   right: 12%; 
+   bottom: 5%;
+   z-index: 2;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.product_card:hover .product_box #btn_view{
+    background: #ff568f;
+}

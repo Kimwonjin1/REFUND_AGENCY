@@ -1,0 +1,23 @@
+.card{
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+}
+
+.card .cards_title{
+    margin-top: 50px;
+    font-size: 3rem;
+}
+.card .cards{
+    height: 100%;
+    
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1200px){
+    .card .cards{
+        width: 60%;
+    }
+} 
