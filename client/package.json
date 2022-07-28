@@ -47,7 +47,7 @@
     "http-proxy-middleware": "^2.0.1",
     "webpack": "^4.44.2"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "",
   "main": "index.js",
   "author": "",
   "license": "ISC"
