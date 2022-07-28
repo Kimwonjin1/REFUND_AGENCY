@@ -47,7 +47,7 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 
-
-app.listen(process.env.PORT || 5000, () => {
+const port = process.env.PORT || 5000 
+app.listen(port, () => {
     console.log('서버 포트에 연결됨', PORT);
 })
