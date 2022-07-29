@@ -32,10 +32,10 @@ mongoose.connect(URI, {
     console.log('MONGODB 연결됨');
 })
 
-// /* Prevent Sleep in Heroku Server */
-// setInterval(function () {
-//   http.get("https://refund-agent.herokuapp.com");
-// }, 600000); // every 10 minutes
+/* Prevent Sleep in Heroku Server */
+setInterval(function () {
+  http.get("https://refund-agent.herokuapp.com");
+}, 600000); // every 10 minutes
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'))
@@ -45,7 +45,7 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;  
 app.listen(PORT, () => {
   console.log("Server is running on port", PORT);
 });
