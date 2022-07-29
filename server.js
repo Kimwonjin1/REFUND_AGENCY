@@ -32,8 +32,6 @@ mongoose.connect(URI, {
     console.log('MONGODB 연결됨');
 })
 
-
- 
 /* Prevent Sleep in Heroku Server */
 setInterval(function () {
   http.get("https://refund-agent.herokuapp.com");
@@ -47,7 +45,6 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 
-const port = process.env.PORT || 5000 
-app.listen(port, () => {
+app.listen(5000, () => {
     console.log('서버 포트에 연결됨', port);
 })
